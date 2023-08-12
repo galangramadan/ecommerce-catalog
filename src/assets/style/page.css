@@ -1,0 +1,155 @@
+:root {
+  --menPrimary: #002772;
+  --womanPrimary: #720060;
+  --primary: #1e1e1e;
+  --secondary: #3f3f3f;
+  --bgPrimary: #ffffff;
+  --bgSecondary: #dcdcdc;
+  --bgMen: #d6e6ff;
+  --bgWomen: #fde2ff;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  display: inline-block;
+  font-size: 828px;
+  color: var(--bgSecondary);
+  transform: rotate(90deg);
+}
+
+span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.container {
+  min-height: 100vh;
+  padding-bottom: 246px;
+}
+
+.tile-background {
+  background-image: url("../images/bg.png");
+  background-color: var(--bgMen);
+  height: 548px;
+  width: full;
+}
+
+.section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 123px auto;
+  width: 1034px;
+  height: 580px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--bgPrimary);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navigation button {
+  background: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 15px;
+  height: 42px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menSection {
+  background-color: var(--bgMen);
+  color: var(--menPrimary);
+}
+
+.womenSection {
+  background-color: var(--bgWoman);
+  color: var(--womanPrimary);
+}
+
+.loader {
+  border: 30px solid var(--bgSecondary);
+  border-top: 30px solid var(--secondary);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: spin 1s linear infinite;
+}
+
+.rating {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.rating span {
+  padding-right: 3px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
