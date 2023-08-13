@@ -41,6 +41,10 @@ p {
   color: var(--primary);
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   min-height: 100vh;
   padding-bottom: 246px;
@@ -48,7 +52,12 @@ p {
 
 .tile-background {
   background-image: url("../images/bg.png");
-  background-color: var(--bgMen);
+  height: 548px;
+  width: full;
+}
+
+.default-background {
+  background-color: var(--bgSecondary);
   height: 548px;
   width: full;
 }
@@ -71,6 +80,14 @@ p {
   height: 100%;
   padding: 50px 50px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapperNoProduct {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -116,12 +133,39 @@ p {
 
 .menSection {
   background-color: var(--bgMen);
+}
+
+.menColor {
+  color: var(--menPrimary);
+}
+
+.menButton {
+  border: 3px solid var(--menPrimary);
   color: var(--menPrimary);
 }
 
 .womenSection {
-  background-color: var(--bgWoman);
+  background-color: var(--bgWomen);
+}
+
+.womenColor {
   color: var(--womanPrimary);
+}
+
+.womenButton {
+  border: 3px solid var(--womanPrimary);
+  color: var(--womanPrimary);
+}
+
+.defaultButton {
+  width: 100%;
+  margin-top: 15px;
+  height: 42px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 3px solid #000;
+  background: none;
 }
 
 .loader {
