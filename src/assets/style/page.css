@@ -54,12 +54,14 @@ button {
   background-image: url("../images/bg.png");
   height: 548px;
   width: full;
+  min-width: 1034px;
 }
 
 .default-background {
   background-color: var(--bgSecondary);
   height: 548px;
   width: full;
+  min-width: 1034px;
 }
 
 .section {
